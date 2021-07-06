@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "refresh": "node src/db/drop-table.js && node src/db/create-table.js"
   },
   "repository": {
     "type": "git",

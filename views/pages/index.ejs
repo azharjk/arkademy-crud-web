@@ -11,14 +11,16 @@
   <button>Create</button>
   <div>
     <ul>
-      <li>
-        <h3>{NAMA_PRODUK}</h3>
-        <p>{KETERANGAN}</p>
-        <p>Rp. {HARGA}</p>
-        <p>Jumlah tersedia {JUMLAH}</p>
-        <button>Update</button>
-        <button>Delete</button>
-      </li>
+      <% for (item of data) { %>
+        <li>
+          <h3><%= item.nama_produk %></h3>
+          <p><%= item.keterangan %></p>
+          <p>Rp. <%= item.harga %></p>
+          <p>Jumlah tersedia <%= item.jumlah %></p>
+          <button>Update</button>
+          <button>Delete</button>
+        </li>
+      <% } %>
     </ul>
   </div>
 </body>

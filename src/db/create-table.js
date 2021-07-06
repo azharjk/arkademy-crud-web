@@ -2,7 +2,7 @@ const db = require('./connection');
 
 const sqlString = `
 CREATE TABLE produk (
-  id INT NOT NULL PRIMARY KEY,
+  id INT PRIMARY KEY AUTO_INCREMENT,
   nama_produk VARCHAR(100) NOT NULL,
   keterangan VARCHAR(255),
   harga INT,

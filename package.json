@@ -1,0 +1,24 @@
+{
+  "name": "arkademy-crud-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azharjk/arkademy-crud-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azharjk/arkademy-crud-web/issues"
+  },
+  "homepage": "https://github.com/azharjk/arkademy-crud-web#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

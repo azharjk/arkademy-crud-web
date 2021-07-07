@@ -7,8 +7,10 @@
   <title>Arkademy CRUD</title>
 </head>
 <body>
-  <h1>Arkademy CRUD</h1>
-  <button>Create</button>
+  <a href="/">
+    <h1>Arkademy CRUD</h1>
+  </a>
+  <a href="/new">Create new product</a>
   <div>
     <ul>
       <% for (item of data) { %>
@@ -17,8 +19,8 @@
           <p><%= item.keterangan %></p>
           <p>Rp. <%= item.harga %></p>
           <p>Jumlah tersedia <%= item.jumlah %></p>
-          <button>Update</button>
-          <button>Delete</button>
+          <a href="/modify/<%= item.id %>">Update</a>
+          <a href="/delete/<%= item.id %>">Delete</a>
         </li>
       <% } %>
     </ul>

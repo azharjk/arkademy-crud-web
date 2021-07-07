@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arkademy CRUD | Modify</title>
+</head>
+<body>
+  <a href="/">
+    <h1>Arkademy CRUD</h1>
+  </a>
+  <form action="/modify/<%= item.id %>" method="POST">
+    <div>
+      <label for="name">Nama produk</label>
+      <br>
+      <input type="text" name="name" value="<%= item.nama_produk %>">
+      <br>
+      <br>
+    </div>
+    <div>
+      <label for="description">Keterangan</label>
+      <br>
+      <textarea name="description" cols="30" rows="10"><%= item.keterangan %></textarea>
+      <br>
+      <br>
+    </div>
+    <div>
+      <label for="price">Harga (Rp)</label>
+      <br>
+      <input type="number" name="price" value="<%= item.harga %>">
+      <br>
+      <br>
+    </div>
+    <div>
+      <label for="qty">Jumlah</label>
+      <br>
+      <input type="number" name="qty" value="<%= item.jumlah %>">
+    </div>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

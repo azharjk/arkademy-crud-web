@@ -14,7 +14,6 @@ const insertItem = ({ name, description, price, qty }) => {
     .then(connection => {
       connection.query(sqlInserString, [name, description, price, qty], (err, results, fields) => {
         if (err) throw err;
-        console.log(results);
       });
       db.endDBConnection(connection);
     })

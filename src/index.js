@@ -8,7 +8,6 @@ app.set('view engine', 'ejs');
 
 app.get('/', async (req, res) => {
   const items = await db.getAllItem();
-  console.log(items);
   res.render('pages/index', { data: items });
 });
 
